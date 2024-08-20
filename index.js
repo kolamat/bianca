@@ -23,20 +23,20 @@ imgContainer.style.gap = "10px";
 document.getElementById("div").appendChild(imgContainer);
 
 const img1 = document.createElement("img");
-img1.src = "/image1.jpg";
+img1.src = "images/image1.jpg";
 img1.style.width = "200px";
 img1.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img1);
 
 const img2 = document.createElement("img");
-img2.src = "/image2.jpg";
+img2.src = "images/image2.jpg";
 img2.style.marginTop = "100px";
 img2.style.width = "200px";
 img2.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img2);
 
 const img3 = document.createElement("img");
-img3.src = "/image3.jpg";
+img3.src = "images/image3.jpg";
 img3.style.width = "200px";
 img3.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img3);
