@@ -40,15 +40,35 @@ document.getElementById("imgDiv").appendChild(img3);
 
 const button = document.createElement("button");
 button.textContent = "Click-Me";
+button.id = "button";
 button.style.padding = "20px";
 button.style.width = "100px";
 button.style.borderRadius = "30px";
 button.style.marginTop = "30px";
-button.onclick = document.getElementById("div").appendChild(button);
+button.addEventListener("click", smile);
+document.getElementById("div").appendChild(button);
+
+const closeButton = document.createElement("button");
+closeButton.textContent = "Click-Me";
+closeButton.id = "closeButton";
+closeButton.style.padding = "20px";
+closeButton.style.width = "100px";
+closeButton.style.borderRadius = "30px";
+closeButton.style.marginTop = "30px";
+closeButton.addEventListener("click", closeSmile);
+document.getElementById("div").appendChild(closeButton);
 
 function smile() {
-  const p = document.createElement("p");
-  p.textContent =
+  //   const p = document.createElement("p");
+  button.textContent =
     "🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣";
-  document.querySelector("button").appendChild(p);
+  document.getElementById("button").appendChild(button);
+}
+function closeSmile() {
+  //   const p = document.createElement("p");
+  closeButton.textContent = "";
+  alert(
+    "sorry my love just wanna disturb you a little and make you laugh alot"
+  );
+  document.getElementById("button").appendChild(closeButton);
 }
