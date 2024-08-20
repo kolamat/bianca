@@ -25,8 +25,6 @@ const img1 = document.createElement("img");
 img1.src = "/image1.jpg";
 img1.style.width = "200px";
 img1.style.borderRadius = "30px";
-img1.style.border = "10px";
-img1.style.borderColor = "pink";
 document.getElementById("imgDiv").appendChild(img1);
 
 const img2 = document.createElement("img");
@@ -34,18 +32,12 @@ img2.src = "/image2.jpg";
 img2.style.marginTop = "100px";
 img2.style.width = "200px";
 img2.style.borderRadius = "30px";
-img2.style.border = "10px";
-img2.style.borderColor = "pink";
 document.getElementById("imgDiv").appendChild(img2);
 
 const img3 = document.createElement("img");
 img3.src = "/image3.jpg";
 img3.style.width = "200px";
-img3.style.height = "full";
 img3.style.borderRadius = "30px";
-img3.style.gridAutoRows = "2";
-img3.style.border = "10px";
-img3.style.borderColor = "pink";
 document.getElementById("imgDiv").appendChild(img3);
 
 const buttonContainer = document.createElement("div");
@@ -59,7 +51,6 @@ button.textContent = "Click-Me";
 button.id = "button";
 button.style.fontSize = "25px";
 button.style.padding = "5px";
-// button.style.width = "100px";
 button.style.borderRadius = "30px";
 button.style.marginTop = "30px";
 button.style.background = "#7777ea";
@@ -72,7 +63,6 @@ closeButton.textContent = "Click-Me for an alert";
 closeButton.id = "closeButton";
 closeButton.style.fontSize = "25px";
 closeButton.style.padding = "5px";
-// closeButton.style.width = "100px";
 closeButton.style.borderRadius = "30px";
 closeButton.style.marginTop = "30px";
 closeButton.style.background = "#7777ea";
@@ -81,17 +71,15 @@ closeButton.addEventListener("click", closeSmile);
 document.getElementById("buttoncontainer").appendChild(closeButton);
 
 function smile() {
-  //   const p = document.createElement("p");
   button.textContent =
     "🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣";
   document.getElementById("button").appendChild(button);
 }
 function closeSmile() {
-  //   const p = document.createElement("p");
-  closeButton.textContent = "Thank you for Clicking me too LOVE";
+  button.textContent = "Thank you for Clicking me too LOVE";
   alert(
     "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
   );
   closeButton.style.fontSize = "20px";
-  document.body("body").appendChild(closeButton);
+  document.querySelector("body").appendChild(closeButton);
 }
