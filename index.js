@@ -6,6 +6,7 @@ const container = document.createElement("div");
 container.id = "div";
 container.style.display = "grid";
 container.style.textAlign = "center";
+container.style.height = "100vh";
 container.style.justifyContent = "center";
 document.querySelector("body").appendChild(container);
 
@@ -43,7 +44,7 @@ document.getElementById("imgDiv").appendChild(img3);
 const buttonContainer = document.createElement("div");
 buttonContainer.id = "buttoncontainer";
 buttonContainer.style.display = "flex";
-buttonContainer.style.justifyContent = "space-between";
+buttonContainer.style.justifyContent = "center";
 document.getElementById("div").appendChild(buttonContainer);
 
 const button = document.createElement("button");
@@ -53,33 +54,17 @@ button.style.fontSize = "25px";
 button.style.padding = "5px";
 button.style.borderRadius = "30px";
 button.style.marginTop = "30px";
+button.style.marginBottom = "10px";
 button.style.background = "#7777ea";
 button.style.color = "white";
 button.addEventListener("click", smile);
 document.getElementById("buttoncontainer").appendChild(button);
 
-const closeButton = document.createElement("button");
-closeButton.textContent = "Click-Me for an alert";
-closeButton.id = "closeButton";
-closeButton.style.fontSize = "25px";
-closeButton.style.padding = "5px";
-closeButton.style.borderRadius = "30px";
-closeButton.style.marginTop = "30px";
-closeButton.style.background = "#7777ea";
-closeButton.style.color = "white";
-closeButton.addEventListener("click", closeSmile);
-document.getElementById("buttoncontainer").appendChild(closeButton);
-
 function smile() {
   button.textContent =
     "🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣";
-  document.getElementById("button").appendChild(button);
-}
-function closeSmile() {
-  button.textContent = "Thank you for Clicking me too LOVE";
   alert(
     "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
   );
-  closeButton.style.fontSize = "20px";
-  document.querySelector("body").appendChild(closeButton);
+  document.getElementById("button").appendChild(button);
 }
