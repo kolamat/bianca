@@ -90,7 +90,7 @@ function closeSmile() {
   //   const p = document.createElement("p");
   closeButton.textContent = "Thank you for Clicking me too LOVE";
   alert(
-    "sorry my love just wanna disturb you a little and make you laugh alot"
+    "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
   );
   closeButton.style.fontSize = "20px";
   document.body("body").appendChild(closeButton);
