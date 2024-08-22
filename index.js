@@ -19,7 +19,6 @@ imgContainer.id = "imgDiv";
 imgContainer.style.display = "grid";
 imgContainer.style.gridTemplateRows = "300px";
 imgContainer.style.gridTemplateColumns = "200px 200px";
-imgContainer.style.textAlign = "center";
 imgContainer.style.gap = "10px";
 document.getElementById("div").appendChild(imgContainer);
 
@@ -27,6 +26,7 @@ const img1 = document.createElement("img");
 img1.src = "images/image1.jpg";
 img1.style.width = "180px";
 img1.style.borderRadius = "30px";
+img1.style.marginLeft = "20px";
 document.getElementById("imgDiv").appendChild(img1);
 
 const img2 = document.createElement("img");
@@ -39,6 +39,7 @@ document.getElementById("imgDiv").appendChild(img2);
 const img3 = document.createElement("img");
 img3.src = "images/image3.jpg";
 img3.style.width = "180px";
+img3.style.marginLeft = "20px";
 img3.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img3);
 
