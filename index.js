@@ -17,8 +17,6 @@ document.getElementById("div").appendChild(H1);
 const imgContainer = document.createElement("div");
 imgContainer.id = "imgDiv";
 imgContainer.style.display = "grid";
-imgContainer.style.padding = "30px";
-imgContainer.style.margin = "30px";
 imgContainer.style.gridTemplateRows = "300px";
 imgContainer.style.gridTemplateColumns = "200px 200px";
 imgContainer.style.gap = "10px";
