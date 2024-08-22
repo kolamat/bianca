@@ -61,10 +61,15 @@ button.addEventListener("click", smile);
 document.getElementById("buttoncontainer").appendChild(button);
 
 function smile() {
-  button.textContent =
-    "🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣";
+  button.textContent = "";
   alert(
     "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
   );
+  for (let i = 0; i < 5; i++) {
+    const p = document.createElement("p");
+    p.textContent = message;
+    // document.querySelector("body").appendChild(p, i);
+  }
+
   document.getElementById("button").appendChild(button);
 }
