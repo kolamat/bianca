@@ -68,12 +68,12 @@ function smile() {
   alert(
     "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
   );
+  button.textContent = "";
   for (let i = 0; i < 100; i++) {
     const p = document.createElement("p");
     p.textContent = "🤣";
-    p.style.display = "flex";
     document.getElementById("button").appendChild(p);
   }
-  button.textContent = "";
+
   //   document.getElementById("button").appendChild(button);
 }
