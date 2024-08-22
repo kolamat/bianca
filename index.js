@@ -24,26 +24,28 @@ document.getElementById("div").appendChild(imgContainer);
 
 const img1 = document.createElement("img");
 img1.src = "images/image1.jpg";
-img1.style.width = "200px";
+img1.style.width = "180px";
 img1.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img1);
 
 const img2 = document.createElement("img");
 img2.src = "images/image2.jpg";
 img2.style.marginTop = "100px";
-img2.style.width = "200px";
+img2.style.width = "180px";
 img2.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img2);
 
 const img3 = document.createElement("img");
 img3.src = "images/image3.jpg";
-img3.style.width = "200px";
+img3.style.width = "180px";
 img3.style.borderRadius = "30px";
 document.getElementById("imgDiv").appendChild(img3);
 
 const buttonContainer = document.createElement("div");
 buttonContainer.id = "buttoncontainer";
 buttonContainer.style.display = "flex";
+buttonContainer.style.paddingLeft = "70px";
+buttonContainer.style.paddingRight = "70px";
 buttonContainer.style.justifyContent = "center";
 document.getElementById("div").appendChild(buttonContainer);
 
@@ -61,14 +63,15 @@ button.addEventListener("click", smile);
 document.getElementById("buttoncontainer").appendChild(button);
 
 function smile() {
-  //   button.textContent = "";
+  alert(
+    "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
+  );
   for (let i = 0; i < 100; i++) {
     const p = document.createElement("p");
     p.textContent = "🤣";
-    document.getElementById("button").appendChild(p, i);
+    p.style.display = "flex";
+    document.getElementById("button").appendChild(p);
   }
-  button.textContent =
-    "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot";
-
+  button.textContent = "";
   //   document.getElementById("button").appendChild(button);
 }
