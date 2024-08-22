@@ -19,6 +19,7 @@ imgContainer.id = "imgDiv";
 imgContainer.style.display = "grid";
 imgContainer.style.gridTemplateRows = "300px";
 imgContainer.style.gridTemplateColumns = "200px 200px";
+imgContainer.style.textAlign = "center";
 imgContainer.style.gap = "10px";
 document.getElementById("div").appendChild(imgContainer);
 
