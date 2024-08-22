@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-body.style.margin = "0px";
+body.style.margin = "5px";
 body.style.backgroundColor = "#caef80";
 
 const container = document.createElement("div");
@@ -17,6 +17,8 @@ document.getElementById("div").appendChild(H1);
 const imgContainer = document.createElement("div");
 imgContainer.id = "imgDiv";
 imgContainer.style.display = "grid";
+imgContainer.style.padding = "30px";
+imgContainer.style.margin = "30px";
 imgContainer.style.gridTemplateRows = "300px";
 imgContainer.style.gridTemplateColumns = "200px 200px";
 imgContainer.style.gap = "10px";
@@ -67,9 +69,8 @@ function smile() {
     p.textContent = "🤣";
     document.getElementById("button").appendChild(p, i);
   }
-  alert(
-    "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
-  );
+  button.textContent =
+    "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot";
 
   //   document.getElementById("button").appendChild(button);
 }
