@@ -46,6 +46,7 @@ document.getElementById("imgDiv").appendChild(img3);
 const buttonContainer = document.createElement("div");
 buttonContainer.id = "buttoncontainer";
 buttonContainer.style.display = "flex";
+buttonContainer.style.padding = "0px";
 buttonContainer.style.paddingLeft = "70px";
 buttonContainer.style.paddingRight = "70px";
 buttonContainer.style.justifyContent = "center";
@@ -69,7 +70,9 @@ function smile() {
     "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
   );
   button.textContent = "";
-  button.style.display = "flex";
+  button.style.display = "grid";
+  button.style.gridTemplateRows = "20px";
+  button.style.gridTemplateColumns = "35px 35px 35px 35px";
   for (let i = 0; i < 100; i++) {
     const p = document.createElement("p");
     p.textContent = "🤣";
