@@ -1,3 +1,21 @@
+const shuffledImage = [
+  "image1.jpg",
+  "image2.jpg",
+  "image3.jpg",
+  "image4.JPG",
+  "image5.JPG",
+  "image6.JPG",
+  "image7.JPG",
+  "image8.JPG",
+  "image9.JPG",
+  "image10.JPG",
+  "image11.JPG",
+  "image12.JPG",
+  "image13.JPG",
+];
+
+const shuffledVideo = ["vid1.mp4", "vid2.mp4", "vid3.mp4"];
+
 const body = document.querySelector("body");
 body.style.margin = "5px";
 body.style.backgroundColor = "#caef80";
