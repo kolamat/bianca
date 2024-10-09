@@ -1,17 +1,17 @@
 const shuffledImage = [
-  "image1.jpg",
-  "image2.jpg",
-  "image3.jpg",
-  "image4.JPG",
-  "image5.JPG",
-  "image6.JPG",
-  "image7.JPG",
-  "image8.JPG",
-  "image9.JPG",
-  "image10.JPG",
-  "image11.JPG",
-  "image12.JPG",
-  "image13.JPG",
+  "images/image1.jpg",
+  "images/image2.jpg",
+  "images/image3.jpg",
+  "images/image4.JPG",
+  "images/image5.JPG",
+  "images/image6.JPG",
+  "images/image7.JPG",
+  "images/image8.JPG",
+  "images/image9.JPG",
+  "images/image10.JPG",
+  "images/image11.JPG",
+  "images/image12.JPG",
+  "images/image13.JPG",
 ];
 
 const shuffledVideo = ["vid1.mp4", "vid2.mp4", "vid3.mp4"];
@@ -82,6 +82,11 @@ button.style.background = "#7777ea";
 button.style.color = "white";
 button.addEventListener("click", smile);
 document.getElementById("buttoncontainer").appendChild(button);
+
+const image = document.createElement("img");
+image.src = { shuffledImage };
+image.style.width = "180px";
+document.getElementById("imgdiv").appendChild(image);
 
 function smile() {
   alert(
