@@ -1,18 +1,20 @@
 const shuffledImage = [
-  "images/image1.jpg",
-  "images/image2.jpg",
-  "images/image3.jpg",
-  "images/image4.JPG",
-  "images/image5.JPG",
-  "images/image6.JPG",
-  "images/image7.JPG",
-  "images/image8.JPG",
-  "images/image9.JPG",
-  "images/image10.JPG",
-  "images/image11.JPG",
-  "images/image12.JPG",
-  "images/image13.JPG",
+  { image1: "images/image1.jpg" },
+  { image2: "images/image2.jpg" },
+  { image3: "images/image3.jpg" },
+  { image4: "images/image4.JPG" },
+  { image5: "images/image5.JPG" },
+  { image6: "images/image6.JPG" },
+  { image7: "images/image7.JPG" },
+  { image8: "images/image8.JPG" },
+  { image9: "images/image9.JPG" },
+  { image10: "images/image10.JPG" },
+  { image11: "images/image11.JPG" },
+  { image12: "images/image12.JPG" },
+  { image13: "images/image13.JPG" },
 ];
+
+console.log(shuffledImage);
 
 const shuffledVideo = ["vid1.mp4", "vid2.mp4", "vid3.mp4"];
 
@@ -83,10 +85,70 @@ button.style.color = "white";
 button.addEventListener("click", smile);
 document.getElementById("buttoncontainer").appendChild(button);
 
-const image = document.createElement("img");
-image.src = { shuffledImage };
-image.style.width = "180px";
-document.getElementById("imgdiv").appendChild(image);
+const imageA = document.createElement("img");
+imageA.src = "images/image1.jpg";
+imageA.style.width = "180px";
+document.querySelector("body").appendChild(imageA);
+
+const imageB = document.createElement("img");
+imageB.src = "images/image2.jpg";
+imageB.style.width = "180px";
+document.querySelector("body").appendChild(imageB);
+
+const imageC = document.createElement("img");
+imageC.src = "images/image3.jpg";
+imageC.style.width = "180px";
+document.querySelector("body").appendChild(imageC);
+
+const imageD = document.createElement("img");
+imageD.src = "images/image4.JPG";
+imageD.style.width = "180px";
+document.querySelector("body").appendChild(imageD);
+
+const imageE = document.createElement("img");
+imageE.src = "images/image5.JPG";
+imageE.style.width = "180px";
+document.querySelector("body").appendChild(imageE);
+
+const imageF = document.createElement("img");
+imageF.src = "images/image6.JPG";
+imageF.style.width = "180px";
+document.querySelector("body").appendChild(imageF);
+
+const imageG = document.createElement("img");
+imageG.src = "images/image7.JPG";
+imageG.style.width = "180px";
+document.querySelector("body").appendChild(imageG);
+
+const imageH = document.createElement("img");
+imageH.src = "images/image8.JPG";
+imageH.style.width = "180px";
+document.querySelector("body").appendChild(imageH);
+
+const imageI = document.createElement("img");
+imageI.src = "images/image9.JPG";
+imageI.style.width = "180px";
+document.querySelector("body").appendChild(imageI);
+
+const imageJ = document.createElement("img");
+imageJ.src = "images/image10.JPG";
+imageJ.style.width = "180px";
+document.querySelector("body").appendChild(imageJ);
+
+const imageK = document.createElement("img");
+imageK.src = "images/image11.JPG";
+imageK.style.width = "180px";
+document.querySelector("body").appendChild(imageK);
+
+const imageL = document.createElement("img");
+imageL.src = "images/image12.JPG";
+imageL.style.width = "180px";
+document.querySelector("body").appendChild(imageL);
+
+const imageM = document.createElement("img");
+imageM.src = "images/image13.JPG";
+imageM.style.width = "180px";
+document.querySelector("body").appendChild(imageM);
 
 function smile() {
   alert(
