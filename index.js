@@ -145,10 +145,10 @@ function smile() {
   button.textContent = "";
   button.style.display = "grid";
   button.style.gridTemplateRows = "20px";
-  button.style.gridTemplateColumns = "35px 35px 35px 35px";
+  button.style.gridTemplateColumns = "35px 35px 35px 35px 35px 35px";
   for (let i = 0; i < 100; i++) {
     const p = document.createElement("p");
-    p.textContent = "🤣";
+    p.textContent = "🙏🏻";
     document.getElementById("button").appendChild(p);
   }
 }
