@@ -140,7 +140,7 @@ document.getElementById("imgDiv").appendChild(imageM);
 
 function smile() {
   alert(
-    "Sorry My LOVE Just Wanna Disturb You A Little and Make You Laugh Alot"
+    "Sorry My LOVE Just Wanna Disturb You A Little and Also here to beg I know i fucked up but i will just keep pleading. Am really Sorry."
   );
   button.textContent = "";
   button.style.display = "grid";
