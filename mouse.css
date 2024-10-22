@@ -8,6 +8,19 @@
 body {
   height: 100vh;
   background: #000115;
+  cursor: none;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 65px;
 }
 
 .cursor {
