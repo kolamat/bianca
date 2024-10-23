@@ -28,10 +28,10 @@ body {
 
 @keyframes autorun {
   from {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(8deg);
+    transform: perspective(1000px) rotateX(-16deg) rotateY(-8deg);
   }
   to {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(368deg);
+    transform: perspective(1000px) rotateX(-16deg) rotateY(-368deg);
   }
 }
 
