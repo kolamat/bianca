@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #002329;
 }
 
 .banner {
@@ -71,7 +72,7 @@ body {
   line-height: 1em;
   color: #252838;
   position: fixed;
-  bottom: 195px;
+  bottom: -45px;
   left: 80px;
 }
 
